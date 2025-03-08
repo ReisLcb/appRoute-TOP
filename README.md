@@ -34,12 +34,14 @@
   ![image](https://github.com/user-attachments/assets/4bc45883-2440-4cca-8f57-eb075c444417)
 
 ### Solução programática
-- Se precisar de mais controle, como redirecionamento condicional, podemos utilizar o Router no arquivo .ts]
+- Se precisar de mais controle, como redirecionamento condicional, podemos utilizar o Router no arquivo .ts
   
   1°: importamos o Router para o nosso projeto.
+  
   ![image](https://github.com/user-attachments/assets/c57e8e06-7024-44d1-b629-f0feafcc2506)
 
   2°: Injetamos o Router na nossa página.
+  
   ![image](https://github.com/user-attachments/assets/eb8b17f2-24ed-4c84-8f44-5358ee68d560)
 
   3° criamos um método para nos enviar para a página desejada.
