@@ -26,3 +26,7 @@
     ```
 
     -- No lugar de ```<type>``` escrevemos ```page```, e para ```<name>``` escrevemos o nome da nossa nova página
+## Arquivo de rotas
+![image](https://github.com/user-attachments/assets/8fff08db-8500-45d5-9746-1ade71e08b02)
+
+
