@@ -31,7 +31,8 @@
 
 ### Solução simples
 - Caso a navegação seja entre páginas fixas, podemos usar:
-  ![image](https://github.com/user-attachments/assets/4bc45883-2440-4cca-8f57-eb075c444417)
+  
+  ![image](https://github.com/user-attachments/assets/c82b3523-60de-411a-8ffb-990b5fef3ba7)
 
 ### Solução programática
 - Se precisar de mais controle, como redirecionamento condicional, podemos utilizar o Router no arquivo .ts
