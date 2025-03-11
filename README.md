@@ -4,6 +4,10 @@
    cd pasta-desejada 
    git clone https://github.com/ReisLcb/appRoute-TOP.git
 
+- Para instalar as dependências, basta executar dentro da pasta local do projeto:
+  ```bash
+  npm install
+
 # Criando projeto Ionic
 ## Iniciando projeto
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
