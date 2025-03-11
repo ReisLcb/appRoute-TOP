@@ -11,8 +11,19 @@
 # Criando projeto Ionic
 ## Iniciando projeto
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
-    ````bash
+    ```bash
     ionic start nome-do-seu-projeto
+    ## Escrever o comando sem argumentos além do nome te dará uma tela para selecionar as dependências e configurações do seu projeto
+    ```
+   - Para uma inicialização mais rápida, podemos preencher todos os argumentos com o seguinte comando:
+     ```bash
+     ionic start [nome] [template] [opções]
+     ## [nome] será o nome do projeto desejado (ex. meuApp)
+     ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (dependendo do framework usado)
+     ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
+     ```
+      ### Template
+        -
 - Agora, devemos verificar se o ionic CLI está instalado verificando sua versão:
     ```bash
     ionic -v 
