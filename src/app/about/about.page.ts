@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/angular/standalone';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; // Importação do router 
 
 @Component({
   selector: 'app-about',
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class AboutPage implements OnInit {
 
-  router = inject(Router)
+  router = inject(Router) // Injeção do router
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class AboutPage implements OnInit {
   }
 
   public abrirHome(){
-    this.router.navigate(['/home'])
+    this.router.navigate(['/home']) // router navega até a página Home
   }
 
 }
