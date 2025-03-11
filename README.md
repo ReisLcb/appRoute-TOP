@@ -29,7 +29,7 @@
 - E para abrir seu projeto no Visual Studio Code, execute:
     ```bash
     code .
-## Definindo novas páginas e rotas
+# Definindo novas páginas e rotas
 - Para definir uma nova pagina, basta executar:
     ```bash
     ionic generate <type> <name> --options
