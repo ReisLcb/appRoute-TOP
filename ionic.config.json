@@ -1,0 +1,7 @@
+{
+  "name": "appRoute",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
