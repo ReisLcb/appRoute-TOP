@@ -30,7 +30,7 @@
     ```bash
     code .
 # Definindo novas páginas e rotas
-- Para definir uma nova pagina, basta executar:
+- Para definir uma nova página, basta executar:
     ```bash
     ionic generate <type> <name> --options
     ```
