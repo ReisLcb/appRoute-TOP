@@ -82,4 +82,4 @@
 \
 \
 \
-**[^1]: Mais informações podem ser obtidas no site do [Ionic](https://ionicframework.com/docs/cli)**
+[^1]: **Mais informações podem ser obtidas no site do [Ionic](https://ionicframework.com/docs/cli)**
