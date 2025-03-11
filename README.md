@@ -3,7 +3,6 @@
    ```bash
    cd pasta-desejada 
    git clone https://github.com/ReisLcb/appRoute-TOP.git
-   
 
 # Criando projeto Ionic
 ## Iniciando projeto
