@@ -13,7 +13,7 @@
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
     ```bash
     ionic start nome-do-seu-projeto
-    ## Escrever o comando sem argumentos além do nome te dará uma tela para selecionar as dependências e configurações do seu projeto
+    ## Escrever o comando sem argumentos te dará uma tela para selecionar as dependências e configurações do projeto
     ```
    - Para uma inicialização mais rápida, podemos preencher todos os argumentos com o seguinte comando:
      ```bash
@@ -23,7 +23,11 @@
      ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
      ```
       ### Template
-        -
+        1. Relaciona um item na lista:
+           - Recuo de quatro espaços.
+                 * recuo de oito espaços.
+           - Quatro espaços novamente.
+     
 - Agora, devemos verificar se o ionic CLI está instalado verificando sua versão:
     ```bash
     ionic -v 
