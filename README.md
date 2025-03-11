@@ -35,7 +35,6 @@
     ionic start meuApp blank --type=angular-standalone
     ## Considerando que nosso projeto será Blank
     ```
-
     
 - Navegue até a pasta do projeto:
     ```bash
