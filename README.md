@@ -30,6 +30,7 @@
      ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (depende do framework)
      ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
      ```
+     
    - Como usaremos o angular standalone, podemos escrever:
     ```bash
     ionic start meuApp blank --type=angular-standalone
