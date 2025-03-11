@@ -21,14 +21,13 @@
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
     ```bash
     ionic start nome-do-seu-projeto
-    ## Escrever o comando sem argumentos te dará uma tela para selecionar as dependências e configurações do projeto
     ```
     
    - Para uma inicialização mais rápida, podemos preencher todos os argumentos com o seguinte comando:
      ```bash
      ionic start [nome] [template] [opções]
      ## [nome] será o nome do projeto desejado (ex. meuApp)
-     ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (dependendo do framework usado)
+     ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (depende do framework)
      ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
      ```
    - Como usaremos o angular standalone, podemos escrever:
