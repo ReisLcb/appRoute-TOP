@@ -1,3 +1,10 @@
+# Clonando repósitório em sua máquina
+- Para clonar este repositório em sua máquina, utilize o seguinte comando:
+   ```bash
+   cd pasta-desejada 
+   git clone https://github.com/ReisLcb/appRoute-TOP.git
+   
+
 # Criando projeto Ionic
 ## Iniciando projeto
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
