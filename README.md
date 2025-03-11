@@ -27,7 +27,7 @@
         ```bash
         ionic start [nome] [template] [opções]
         ## [nome] será o nome do projeto desejado (ex. meuApp)
-        ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (depende do framework)
+        ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' ou 'my-first-app' (depende do framework)
         ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
         ```
      
@@ -54,10 +54,11 @@
     ```
     - Para usar esse comando de forma mais rápida, pode executar:
       ```Bash
-      ionic generate <type> <name> --options
+      ionic generate [schematic] [name]
+      ## [schematic] pode ser: 'page', 'directive', 'component' ou 'service' 
       ```
 
-    - No lugar de ```<type>``` escrevemos ```page```, e para ```<name>``` escrevemos o nome da nossa nova página (Não é necessário a flag ```--options```)
+    - Neste caso, no lugar de ```[schematic]``` escrevemos ```page```, e para ```[name]``` escrevemos o nome da nossa nova página
 ## Arquivo de rotas
 ![image](https://github.com/user-attachments/assets/8fff08db-8500-45d5-9746-1ade71e08b02)
 
