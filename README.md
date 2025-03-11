@@ -10,11 +10,20 @@
 
 # Criando projeto Ionic
 ## Iniciando projeto
+- Primeiro, devemos verificar se o ionic CLI está instalado verificando sua versão:
+    ```bash
+    ionic -v 
+    ## Ultima versão: 8.4.x
+- Caso não esteja instalado, instale o ionic CLI com o seguinte comando:
+    ```bash
+    sudo npm install -g @ionic/cli
+
 - Para iniciar, iniciaremos o nosso terminal (pode ser **Linux**, **PowerShell** ou **WSL**):
     ```bash
     ionic start nome-do-seu-projeto
     ## Escrever o comando sem argumentos te dará uma tela para selecionar as dependências e configurações do projeto
     ```
+    
    - Para uma inicialização mais rápida, podemos preencher todos os argumentos com o seguinte comando:
      ```bash
      ionic start [nome] [template] [opções]
@@ -22,19 +31,7 @@
      ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (dependendo do framework usado)
      ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
      ```
-      ### Template
-        1. Relaciona um item na lista:
-           - Recuo de quatro espaços.
-                 * recuo de oito espaços.
-           - Quatro espaços novamente.
      
-- Agora, devemos verificar se o ionic CLI está instalado verificando sua versão:
-    ```bash
-    ionic -v 
-    ## Ultima versão: 8.4.x
-- Caso não esteja instalado, instale o ionic CLI com o seguinte comando:
-    ```bash
-  sudo npm install -g @ionic/cli
 - Navegue até a pasta do projeto:
     ```bash
     cd nome-do-seu-projeto
