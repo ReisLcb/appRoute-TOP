@@ -4,7 +4,7 @@
    cd pasta-desejada 
    git clone https://github.com/ReisLcb/appRoute-TOP.git
 
-- Para instalar as dependências, basta executar dentro da pasta local do projeto:
+- Para instalar as dependências, basta executar no terminal dentro da pasta local do projeto:
   ```bash
   npm install
 
