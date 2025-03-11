@@ -78,8 +78,8 @@
   4°: No arquivo .html de nossa página/componente, Chamamos nosso método abrirAbout() com a diretiva ```click```
 
   ![image](https://github.com/user-attachments/assets/fd4b7ed4-e315-4046-af8c-9042d25f6d0f)
-
-
-
-
+\
+\
+\
+\
 **Mais informações podem ser obtidas no site do [Ionic](https://ionicframework.com/docs/cli)**
