@@ -54,7 +54,7 @@
   3° criamos um método para nos enviar para a página desejada.
   ![image](https://github.com/user-attachments/assets/58e92c59-bb1d-414c-a009-d2fc0716983f)
 
-  4°: No arquivo .html de nossa página/componente, Chamamos nosso método abrirAbout() com a diretiva click
+  4°: No arquivo .html de nossa página/componente, Chamamos nosso método abrirAbout() com a diretiva ```click```
 
   ![image](https://github.com/user-attachments/assets/fd4b7ed4-e315-4046-af8c-9042d25f6d0f)
 
