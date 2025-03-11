@@ -8,6 +8,11 @@
   ```bash
   npm install
 
+- Ao final da instalação, execute o projeto:
+  ```bash
+  ionic serve
+  ```
+
 # Criando projeto Ionic
 ## Iniciando projeto
 - Primeiro, devemos verificar se o ionic CLI está instalado verificando sua versão:
