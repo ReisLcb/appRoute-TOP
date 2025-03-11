@@ -49,8 +49,13 @@
 # Definindo novas páginas e rotas
 - Para definir uma nova página, basta executar:
     ```bash
-    ionic generate <type> <name> --options
+    ionic generate
+    ## Usar este comando sem argumentos te dará uma tela para escolher o que deseja gerar
     ```
+    - Para usar esse comando de forma mais rápida, pode executar:
+      ```Bash
+      ionic generate <type> <name> --options
+      ```
 
     - No lugar de ```<type>``` escrevemos ```page```, e para ```<name>``` escrevemos o nome da nossa nova página (Não é necessário a flag ```--options```)
 ## Arquivo de rotas
