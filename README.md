@@ -31,7 +31,12 @@
      ## [template] pode ser: 'blank', 'tabs', 'sidemenu', 'list' e 'my-first-app' (dependendo do framework usado)
      ## [opções] podem ser: --list, --type=<tipo>, --cordova, --capacitor e --id=<id>
      ```
-     
+   - Como usaremos o angular standalone, podemos escrever:
+    ```bash
+    ionic start meuApp blank --type=angular-standalone
+    ## Considerando que nosso projeto será Blank
+    ```
+    
 - Navegue até a pasta do projeto:
     ```bash
     cd nome-do-seu-projeto
