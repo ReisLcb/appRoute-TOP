@@ -35,7 +35,7 @@
     ionic generate <type> <name> --options
     ```
 
-    - No lugar de ```<type>``` escrevemos ```page```, e para ```<name>``` escrevemos o nome da nossa nova página
+    - No lugar de ```<type>``` escrevemos ```page```, e para ```<name>``` escrevemos o nome da nossa nova página (Não é necessário a flag ```--options```)
 ## Arquivo de rotas
 ![image](https://github.com/user-attachments/assets/8fff08db-8500-45d5-9746-1ade71e08b02)
 
@@ -61,11 +61,3 @@
   4°: No arquivo .html de nossa página/componente, Chamamos nosso método abrirAbout() com a diretiva ```click```
 
   ![image](https://github.com/user-attachments/assets/fd4b7ed4-e315-4046-af8c-9042d25f6d0f)
-
-
-
-
-
-
-
-
