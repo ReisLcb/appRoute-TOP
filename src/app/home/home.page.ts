@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; // Importação do Router no projeto
 
 @Component({
   selector: 'app-home',
@@ -10,12 +10,12 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  router = inject(Router)
+  router = inject(Router) // Injeção do Router na página 
 
   constructor() {}
 
   public abrirAbout(){
-    this.router.navigate(['/about'])
+    this.router.navigate(['/about']) // Utiliza o router para navegar até a página About
   }
 
 }
