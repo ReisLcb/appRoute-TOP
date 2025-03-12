@@ -14,8 +14,8 @@ export class HomePage {
 
   constructor() {}
 
-  public abrirAbout(){
-    this.router.navigate(['/about']) // Utiliza o router para navegar até a página About
+  public abrirCadastro(){
+    this.router.navigate(['/cadastro']) // Utiliza o router para navegar até a página About
   }
 
 }

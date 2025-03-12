@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'about', // nome da rota para a pagina About, podemos alterá-la
     loadComponent: () => import('./about/about.page').then( m => m.AboutPage) // caminho para a página about dentro dos arquivos do projeto
   },
+  {
+    path: 'cadastro',
+    loadComponent: () => import('./cadastro/cadastro.page').then( m => m.CadastroPage)
+  },
 ];

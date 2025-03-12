@@ -1,15 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>about</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">about</ion-title>
+      <ion-title>Detalhes do Cadastro</ion-title>
     </ion-toolbar>
-
   </ion-header>
-  <ion-button (click)="abrirHome()">Página home</ion-button> <!--Chama abrirHome() para redirecionar o usuário para a página Home-->
+  
+  <ion-content class="ion-padding">
+    <div *ngFor="let dados of listaCadastroMantida"> <!-- A lista de 'backup' pe percorrida, apresentando-nos os usuários cadastrados -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ dados.nome }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Email:</strong> {{ dados.email }}</p>
+        <p><strong>Telefone:</strong> {{ dados.telefone }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+    <ion-button expand="full" (click)="voltar()">Voltar</ion-button>
+  
+  </ion-content>
+  
 </ion-content>
