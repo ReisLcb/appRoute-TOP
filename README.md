@@ -3,6 +3,12 @@
    ```bash
    cd pasta-desejada 
    git clone https://github.com/ReisLcb/appRoute-TOP.git
+   ```
+  - Caso queira clonar a resolução do exercício ou alguma outra branch específica, execute:
+    ```bash
+    git clone -b <branch-name> https://github.com/ReisLcb/appRoute-TOP.git
+    ## <branch-name> pode ser substituido por 'exercicio-cadastro'
+    ```
 
 - Para instalar as dependências, basta executar no terminal dentro da pasta local do projeto:
   ```bash
