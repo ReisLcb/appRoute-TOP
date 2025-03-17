@@ -5,17 +5,18 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+<ion-item>
+<ion-input type="text" [(ngModel)]="newTask"></ion-input>
+<ion-button (click)="addTask()">Adicionar</ion-button>
+</ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-list>
+  <ion-item *ngFor="let task of tasks">
+    <ion-label>ID: {{ task.id }}</ion-label>
+    <ion-label>Titulo: {{ task.titulo }}</ion-label>
+    <ion-label>Completo: {{ task.complete }}</ion-label>
+  </ion-item>
+</ion-list>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    <ion-button (click)="abrirAbout()">Pagina about</ion-button> <!--Chama o método abrirAbout() para abrir a pagina About-->
-  </div>
 </ion-content>
