@@ -6,7 +6,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonItem, IonInp
 interface Task{
   readonly id:number
   titulo:string
-  complete:boolean
+  estado:'Cadastrada' | 'Cancelada' | 'Concluída'
 }
 
 @Component({
@@ -21,7 +21,7 @@ export class HomePage {
   newTask:string = ''
 
   public addTask(){
-    if(this.newTask.trim()) this.tasks.push({id:Date.now(), titulo: this.newTask.trim(), complete:false})
+    if(this.newTask.trim()) this.tasks.push({id:Date.now(), titulo: this.newTask.trim(), estado:'Cadastrada'})
     this.newTask = ''
     console.log(this.tasks);
   }
