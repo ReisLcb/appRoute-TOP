@@ -7,16 +7,25 @@
 </ion-header>
 <ion-content>
 <ion-item>
-<ion-input type="text" [(ngModel)]="newTask"></ion-input>
+<ion-input type="text" label="Título da tarefa:" placeholder="ex.: Jogar o lixo fora" [(ngModel)]="newTask"></ion-input>
 <ion-button (click)="addTask()">Adicionar</ion-button>
 </ion-item>
 
-<ion-list>
-  <ion-item *ngFor="let task of tasks">
-    <ion-label>ID: {{ task.id }}</ion-label>
-    <ion-label>Titulo: {{ task.titulo }}</ion-label>
-    <ion-label>Completo: {{ task.complete }}</ion-label>
-  </ion-item>
-</ion-list>
+<div *ngFor="let task of tasks">
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{ task.titulo }}</ion-card-title>
+    <ion-card-subtitle>id: {{ task.id }}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Estado: {{ task.estado }}
+  </ion-card-content>
+
+  <ion-button fill="clear" color="default" (click)="concluir(task.id)">Concluir</ion-button>
+  <ion-button fill="clear" color="danger" (click)="cancelar(task.id)">Cancelar</ion-button>
+  <ion-button *ngIf="task.estado == 'Cancelada'" fill="clear" color="danger" (click)="excluir(task.id)">Excluir</ion-button>
+</ion-card>
+</div>
 
 </ion-content>
