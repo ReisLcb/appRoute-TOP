@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Task manager
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,8 +17,10 @@
     <ion-card-title>{{ task.titulo }}</ion-card-title>
     <ion-card-subtitle>id: {{ task.id }}</ion-card-subtitle>
   </ion-card-header>
-
+  
   <ion-card-content>
+    <ion-card-subtitle>Notas da tarefa:</ion-card-subtitle><ion-textarea></ion-textarea> 
+    <br>
     Estado: {{ task.estado }}
   </ion-card-content>
 
