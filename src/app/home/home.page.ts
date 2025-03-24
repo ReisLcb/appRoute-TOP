@@ -9,7 +9,7 @@ interface Task{
   readonly id:number
   titulo:string
   notas:string
-  estado:'Cadastrada' | 'Cancelada' | 'Concluída'
+  complete:boolean
 }
 
 @Component({
@@ -19,6 +19,7 @@ interface Task{
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonInput, IonItem, CommonModule, FormsModule, NgFor, NgIf, IonCard, IonCardContent,IonCardTitle, IonCardSubtitle, IonCardHeader, IonTextarea],
 })
 export class HomePage {
+  exibirConcluidos:boolean = true
 
   tasks:Task[] = []
   newTask:string = ''
@@ -27,21 +28,24 @@ export class HomePage {
   //   addIcons({ellipseOutline})
   // }
 
+  public mostrarOcultar(){
+    this.exibirConcluidos = !this.exibirConcluidos
+  }
+
+  get filteredTasks(){
+    return this.tasks.filter((item) =>  this.exibirConcluidos || !item.complete)
+  }
+
   public addTask(){
-    if(this.newTask.trim()) this.tasks.push({id:Date.now(), titulo: this.newTask.trim(), notas:'', estado:'Cadastrada'})
+    if(this.newTask.trim()) this.tasks.push({id:Date.now(), titulo: this.newTask.trim(), notas:'', complete: false})
     this.newTask = ''
     console.log(this.tasks);
   }
 
   public concluir(id:number){
-    for (const task of this.tasks) if(id == task.id && task.estado == 'Cadastrada') task.estado = "Concluída"
+    for (const task of this.tasks) if(id == task.id && !task.complete) task.complete = true
   }
-
-  public cancelar(id:number){
-    for (const task of this.tasks) if(id == task.id && task.estado == 'Cadastrada') task.estado = "Cancelada"
-  }
-
   public excluir(id:number){
-    for (const task of this.tasks) if(id == task.id && task.estado == 'Cancelada') this.tasks.splice(this.tasks.indexOf(task), 1)
+    for (const task of this.tasks) if(id == task.id) this.tasks.splice(this.tasks.indexOf(task), 1)
   }
 }

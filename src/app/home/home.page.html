@@ -11,23 +11,23 @@
 <ion-button (click)="addTask()">Adicionar</ion-button>
 </ion-item>
 
-<div *ngFor="let task of tasks">
+<div *ngFor="let task of filteredTasks">
 <ion-card>
   <ion-card-header>
     <ion-card-title>{{ task.titulo }}</ion-card-title>
     <ion-card-subtitle>id: {{ task.id }}</ion-card-subtitle>
   </ion-card-header>
-  
+
   <ion-card-content>
-    <ion-card-subtitle>Notas da tarefa:</ion-card-subtitle><ion-textarea></ion-textarea> 
+    <ion-card-subtitle>Notas da tarefa:</ion-card-subtitle><ion-textarea></ion-textarea>
     <br>
-    Estado: {{ task.estado }}
+    Estado: {{ task.complete }}
   </ion-card-content>
 
   <ion-button fill="clear" color="default" (click)="concluir(task.id)">Concluir</ion-button>
-  <ion-button fill="clear" color="danger" (click)="cancelar(task.id)">Cancelar</ion-button>
-  <ion-button *ngIf="task.estado == 'Cancelada'" fill="clear" color="danger" (click)="excluir(task.id)">Excluir</ion-button>
+  <ion-button fill="clear" color="danger" (click)="excluir(task.id)">Excluir</ion-button>
 </ion-card>
 </div>
+  <ion-button fill="clear" color="danger"(click)="mostrarOcultar()">Mostrar / Ocultar</ion-button>
 
 </ion-content>
