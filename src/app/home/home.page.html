@@ -21,13 +21,21 @@
   <ion-card-content>
     <ion-card-subtitle>Notas da tarefa:</ion-card-subtitle><ion-textarea></ion-textarea>
     <br>
-    Estado: {{ task.complete }}
   </ion-card-content>
 
-  <ion-button fill="clear" color="default" (click)="concluir(task.id)">Concluir</ion-button>
-  <ion-button fill="clear" color="danger" (click)="excluir(task.id)">Excluir</ion-button>
+  <ion-button fill="clear" color="default" (click)="concluir(task.id)">
+    <ion-icon slot="start" [name]="task.complete ? 'checkmark-circle' : 'ellipse-outline'">
+    </ion-icon>
+      {{ task.complete ? "Desmarcar concluído" : "Marcar concluído" }}
+  </ion-button>
+
+  <ion-button fill="clear" color="danger"  (click)="excluir(task.id)">
+    <ion-icon name="trash"></ion-icon>Excluir</ion-button>
 </ion-card>
 </div>
-  <ion-button fill="clear" color="danger"(click)="mostrarOcultar()">Mostrar / Ocultar</ion-button>
+  <ion-button (click)="mostrarOcultar()">
+    <ion-icon [name]="exibirConcluidos ? 'eye-off' : 'eye'"></ion-icon>
+    {{ exibirConcluidos ? "Ocultar concluídos" : "Exibir concluídos" }}
+  </ion-button>
 
 </ion-content>
