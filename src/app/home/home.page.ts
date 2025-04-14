@@ -3,15 +3,12 @@ import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonItem, IonInput, IonCard, IonCardContent, IonCardTitle, IonCardSubtitle, IonCardHeader, IonTextarea, IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
+import { ellipseOutline, checkmarkCircle, eye, eyeOff, trash } from 'ionicons/icons'
+import { UsersService } from '../service/task.service'
 
-
- import { ellipseOutline, checkmarkCircle, eye, eyeOff, trash } from 'ionicons/icons'
-
-interface Task{
-  readonly id:number
-  titulo:string
-  notas:string
-  complete:boolean
+interface Usuario{
+  nome:string
+  senha:string
 }
 
 @Component({
@@ -21,6 +18,13 @@ interface Task{
   imports: [IonHeader, IonIcon, IonToolbar, IonTitle, IonContent, IonButton, IonInput, IonItem, CommonModule, FormsModule, NgFor, NgIf, IonCard, IonCardContent,IonCardTitle, IonCardSubtitle, IonCardHeader, IonTextarea],
 })
 export class HomePage {
+  nome:string = ""
+  senha:string = ""
+
+  adicionarUsuario(){
+    cadastrar
+  }
+
   constructor(){
     addIcons({ ellipseOutline, checkmarkCircle, eye, eyeOff, trash })
   }
